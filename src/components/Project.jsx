@@ -14,13 +14,14 @@ import Demineur from '../assets/demineur.jpeg';
 import { FaJava, FaReact, FaPhp, FaHtml5, FaPython, FaCss3 } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiLua } from "react-icons/si";
+import { TbSql } from "react-icons/tb";
   // I C O N E S 
 
 
 export default function Project() {
   return (
     <><div id='projects' className=''><hr/></div>
-      <div  className='bg-indigo-800 lg:m-20 max-w-full rounded-xl'>
+      <div  className='bg-indigo-800 lg:m-20 lg:pb-10 max-w-full rounded-xl'>
 
         <div className='grid justify-items-center m-10'>
           <h1  className='text-3xl text-white mt-10'>Projects</h1>
@@ -82,9 +83,9 @@ export default function Project() {
 
             {/* cube 5 gauche */}
             <Cube 
-              title="Browser extension"
-              icones={[<FaHtml5/>,<FaCss3/>,<RiJavascriptFill/>]}
-              description="Chrome browser extension focused on accessibility according to RGAA standards."
+              title="Social Media"
+              icones={[<TbSql/>,<FaPhp/>,<FaHtml5/>,<FaCss3/>]}
+              description="Designing a complete social network in PHP with secure authentication system and SQL database."
               image={Reseau}
             />
             
