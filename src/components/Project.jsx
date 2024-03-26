@@ -1,4 +1,4 @@
-import SkillContainer from './SkillContainer.jsx';
+import Project_Container from './Project_Container.jsx';
 
   // I M A G E S //
 import Enigma from '../assets/enigma.jpeg.png';
@@ -15,7 +15,6 @@ import { FaJava, FaReact, FaPhp, FaHtml5, FaPython, FaCss3 } from "react-icons/f
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiLua } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
-
   // I C O N E S 
 
 
@@ -34,7 +33,7 @@ export default function Project() {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 p-5'>
 
             {/* rectangle 1 gauche */}
-            <SkillContainer 
+            <Project_Container 
               title="Browser extension"
               icones={[<FaHtml5/>,<FaCss3/>,<RiJavascriptFill/>]}
               description="Chrome browser extension focused on accessibility according to RGAA standards."
@@ -42,7 +41,7 @@ export default function Project() {
             />
             
             {/* rectangle 2 droite */}
-            <SkillContainer 
+            <Project_Container 
               title="Meteo data visualization"
               icones={[<FaHtml5/>,<FaCss3/>,<RiJavascriptFill/>]}
               description="Asynchronous connections to APIs for retrieving, processing, and presenting live information."
@@ -57,7 +56,7 @@ export default function Project() {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 p-5'>
 
             {/* cube 3 gauche */}
-            <SkillContainer 
+            <Project_Container 
               title="Online furniture sales platform"
               icones={[<FaJava/>,<FaReact/>,<RiJavascriptFill/>,<FaHtml5/>,<FaCss3/>]}
               description="Creating the backEnd with Java and Spring boot framework. Concerning FrontEnd we choose React."
@@ -67,7 +66,7 @@ export default function Project() {
             {/* cube 4 droite */}
             
            
-            <SkillContainer 
+            <Project_Container 
               title="Enigma PICO 8"
               icones={[<SiLua/>]}
               description="Complete conception of the game with Pico-8 engine and LUA programming language."
@@ -83,7 +82,7 @@ export default function Project() {
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 p-5'>
 
             {/* cube 5 gauche */}
-            <SkillContainer 
+            <Project_Container 
               title="Social Media"
               icones={[<TbSql/>,<FaPhp/>,<FaHtml5/>,<FaCss3/>]}
               description="Designing a complete social network in PHP with secure authentication system and SQL database."
@@ -91,7 +90,7 @@ export default function Project() {
             />
             
             {/* cube 6 droite */}
-            <SkillContainer 
+            <Project_Container 
               title="Minesweeper"
               icones={[<FaPython/>]}
               description="Designing the logic using Python with an object-oriented approach and the Tkinter library for the graphical interface."
