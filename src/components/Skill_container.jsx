@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function Skill_container({description, skillsList, image}) {
+export default function Skill_container({description, icones}) {
 
  
   return (
@@ -12,6 +12,10 @@ export default function Skill_container({description, skillsList, image}) {
 
     <div className='p-4 text-indigo-400'>
         {description}
+    </div>
+
+    <div className='flex items-center  justify-center text-8xl'>
+        {icones}
     </div>
 
 

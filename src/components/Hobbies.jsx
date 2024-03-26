@@ -4,6 +4,7 @@ import Sport from '../assets/sport.jpeg';
 import HobbieContainer from './HobbieContainer';
 import Cube from './HobbieContainer';
 
+
 export default function Hobbies() {
   return (
     <div id='hobbies' className=' lg:m-20 max-w-full rounded-xl'>
