@@ -79,10 +79,10 @@ export default function Project() {
            <hr/>
 
           {/* rangé 3 */}
-          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 p-5'>
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 p-5' >
 
             {/* cube 5 gauche */}
-            <Project_Container 
+            <Project_Container
               title="Social Media"
               icones={[<TbSql/>,<FaPhp/>,<FaHtml5/>,<FaCss3/>]}
               description="Designing a complete social network in PHP with secure authentication system and SQL database."
@@ -96,9 +96,10 @@ export default function Project() {
               description="Designing the logic using Python with an object-oriented approach and the Tkinter library for the graphical interface."
               image={Demineur}
             />
-            
+             <div id="skills"></div>
 
           </div>
+         
 
         </div>
       </div>
