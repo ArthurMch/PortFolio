@@ -1,8 +1,6 @@
 import React from 'react'
 
-export default function cube({title, icones, description, image, lien}) {
-
-
+export default function SkillContainer({title, icones, description, image, lien}) {
   return (
     
     <div className='max-w-md mx-auto text-center  size-full bg-white rounded-xl shadow-md 
