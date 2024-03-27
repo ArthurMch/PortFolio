@@ -1,4 +1,4 @@
-import { AiFillFire } from "react-icons/ai";
+import { RxRocket } from "react-icons/rx";
 import {AiOutlineClose} from"react-icons/ai";
 import {HiMenuAlt1} from 'react-icons/hi';
 import { useState } from "react";
@@ -20,7 +20,7 @@ const Nav = () => {
     <div className="fixed w-screen bg-black z-10">
     <div className="flex items-center justify-between p-5 lg:flex-row ">
         <div>
-          <a href="#portfolio" className="text-white font-mono text-3xl tracking-wider flex items-center"><AiFillFire className="text-white"/>&nbsp;PORTFOLIO</a>
+          <a href="#portfolio" className="text-white font-mono text-3xl tracking-wider flex items-center"><RxRocket className="text-white"/>&nbsp;PORTFOLIO</a>
         </div>
         <div className="space-x-4">
           <div className="ssm:hidden lg:block space-x-2">
@@ -39,11 +39,11 @@ const Nav = () => {
 
       <div className="ssm:block lg:hidden">
         {toggle ? (
-           <div className="flex justify-between ml-10 mb-3">
+           <div className="flex  justify-center  mb-3">
           <ul>
-            <li  className="text-white hover:bg-indigo-800 text-xl mb-2 cursor-pointer"><a href="#skills"> Skills </a></li>
-            <li className="text-white hover:bg-indigo-800 text-xl mb-2 cursor-pointer"><a href="#projects" > Projects</a></li>
-            <li  className="text-white hover:bg-indigo-800 text-xl mb-2 cursor-pointer"><a href="#hobbies"> Hobbies </a></li>
+            <li  className="text-white w-40 hover:bg-indigo-800 rounded-full text-center text-xl mb-2 cursor-pointer"><a href="#skills"> Skills </a></li>
+            <li className="text-white hover:bg-indigo-800 rounded-full text-center text-xl mb-2 cursor-pointer"><a href="#projects" > Projects</a></li>
+            <li  className="text-white hover:bg-indigo-800 rounded-full text-center text-xl mb-2 cursor-pointer"><a href="#hobbies"> Hobbies </a></li>
           </ul>
         </div>
         ):(

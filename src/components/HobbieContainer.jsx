@@ -2,13 +2,13 @@ import React from 'react'
 
 export default function HobbieContainer({title, description, image}) {
   return (
-    <div className='max-w-md mx-auto text-center  size-full rounded-xl shadow-md 
+    <div className='max-w-md mx-auto text-center   rounded-xl shadow-md 
     overflow-hidden md:max-w-2xl cursor-pointer m-8 px-4  border-solid border border-x-white bg-indigo-800'>
 
 
  <div className='md:flex items-center p-8'>
 
-    <div className='pb-8 uppercase tracking-wide ti-indigo-500 font-semibold text-lg'>
+    <div className='pb-8 uppercase tracking-wide text-indigo-50 font-semibold text-lg'>
      {title}
      </div> 
 
