@@ -16,7 +16,7 @@ export default function HobbieContainer({title, description, image}) {
      <img className='rounded-xl border-solid border-4 border-indigo-400' src={image} alt={toString(title)} width={250} height={250} />
     </div>
 
-   <p className='mt-2 text-white content-center'>
+   <p className='mt-2 text-slate-300 content-center'>
      {description}
      </p>
    

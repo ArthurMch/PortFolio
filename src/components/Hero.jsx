@@ -4,24 +4,21 @@ import { IoIosMail } from "react-icons/io";
 import { useState } from 'react';
 
 const Hero = () => { 
-  // const [showContent, setShowContent] = useState(false);
+  const [showContent, setShowContent] = useState(false);
 
-  // const aboutMeButton = (
-  //   <button id='aboutMe' onClick={showMore()} className='bg-white text-indigo-600 px-10 py-2 my-3 rounded-full hover:bg-indigo-800 hover:text-white'>
-  //     Show more...
-  //   </button>
-  // );
+  const moreInfo = (
+    <div className="mt-4 text-gray-700 leading-relaxed">
+      "blablabla"
+    </div>
+  );
 
-  // const moreInfo = (
-  //   <div className="mt-4 text-gray-700 leading-relaxed">
-  //     "blablabla"
-  //   </div>
-  // );
-
+  const handleToggleClick = () => {
+    setShowContent((prevState) => !prevState);
+  };
 
   
-
   return (
+    
     <section  id="portfolio" className='flex justify-arround lg:h-screen items-center p-10  lg:flex-row flex-col ssm:space-y-10 text-white'>
         <div className='lg:w-1/3 ssm:w-fit'>
 
@@ -45,9 +42,19 @@ const Hero = () => {
             
           </p>
 
-          <button id='aboutMe' className='bg-white text-indigo-600 px-10 py-2 my-3 rounded-full hover:bg-indigo-800 hover:text-white'>
-            Show more...
-          </button>
+          <div className="container mx-auto">
+          {!showContent && (
+            <button onClick={handleToggleClick} className='bg-white text-indigo-600 px-10 py-2 my-3 rounded-full hover:bg-indigo-800 hover:text-white'>
+              Show more...
+            </button>
+          )}
+          {showContent && moreInfo}
+          {showContent && (
+            <button onClick={() => setShowContent(false)} className='bg-white text-indigo-600 px-10 py-2 my-3 rounded-full hover:bg-indigo-800 hover:text-white'>
+              Hide contents
+            </button>
+          )}
+        </div>
 
 
           {/* liens utils */}
