@@ -8,7 +8,9 @@ const Hero = () => {
 
   const moreInfo = (
     <div className="mt-4 text-gray-700 leading-relaxed">
-      "blablabla"
+      Before launching my company, I attended a specialized mathematics and mechanics school with a focus on engineering and design. However, as time passed, I found myself growing increasingly disenchanted with the fields of mechanical engineering and design. Despite this, I discovered that I had a strong aptitude for problem-solving, which led me to explore other avenues where I could apply my skills. It is now clear to me that coding is an ideal fit for my abilities and interests.
+
+As I reflect on my career path, I realize that my strengths lie in analyzing complex situations, finding creative solutions, and developing efficient algorithms. 
     </div>
   );
 
@@ -22,14 +24,14 @@ const Hero = () => {
     <section  id="portfolio" className='flex justify-arround lg:h-screen items-center p-10  lg:flex-row flex-col ssm:space-y-10 text-white'>
         <div className='lg:w-1/3 ssm:w-fit'>
 
-          <h1 className='text-6xl pt-16'>Arthur Michaïlesco</h1><hr/>
+          <h1 className='text-6xl pt-16'>Arthur Michaïlesco</h1><hr className='border-2 border-black'/>
           <p className='mt-10 text-slate-300 font-sans'>
           Currently enrolled in a FullStack program at Ada tech School (Bac +3 application developer). 
           Actively seeking an apprenticeship opportunity for one year starting June 2024. 
           
           </p>
         </div>
-        <div className='lg:w-1/3 lg:p-10'>
+        <div className='md:w-1/3 lg:w-1/3 lg:p-10'>
            <img src={HeroPic} alt=''
            className='rounded-full border-8 border-white w-full'/>
         </div>

@@ -10,19 +10,26 @@ import Learn from '../assets/learn.jpeg'
 
 
 export default function Skills() {
-
-
+  const skillsData = {
+      icons: {
+        Java: <FaJava className="mx-3" />,
+        React: <FaReact className="mx-3" />,
+        PHP: <FaPhp className="mx-3" />,
+        HTML: <FaHtml5 className="mx-3" />,
+        Python: <FaPython className="mx-3" />,
+        CSS: <FaCss3 className="mx-3" />,
+      },
+      description:
+        "Your long description goes here..." /* Or load it from another source */
+    };
 
   return (
-    
-    <div className="bg-white lg:m-20 max-w-full p-4 rounded-xl mt-8 mx-3 text-center ">
+    <div className="bg-white lg:m-20 max-w-full p-4 rounded-xl  mx-3 text-center ">
     
       <div >
         <Skill_container
           description= {"I study at a distinctive full stack development school where I stand out with my unique approach centered on continuous learning. This school emphasizes the ability to learn independently, making me versatile across any programming language. By adhering to this philosophy, I not only enhance my technical skills but also improve my capacity for quick adaptation to the ever-changing landscape of programming."}
-          icones= {[<FaJava className="mx-3"/>,<FaReact className="mx-3"/>,
-          <FaPhp className="mx-3"/>,<FaHtml5 className="mx-3"/>,
-          <FaPython className="mx-3"/>,<FaCss3 className="mx-3"/>]}
+          icones= {skillsData.icons}
         />
       </div>
 

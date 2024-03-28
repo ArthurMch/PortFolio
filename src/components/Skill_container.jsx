@@ -1,7 +1,7 @@
 import React from 'react'
 
 export default function Skill_container({description, icones}) {
-
+  const iconsList = Object.entries(icones);
  
   return (
 
@@ -14,10 +14,20 @@ export default function Skill_container({description, icones}) {
         {description}
     </div>
 
-    <div className='sm:grid sm:grid-row-2'>
-      <div className='flex items-center  justify-center lg:text-8xl'>
-        {icones.map((icone => (<div>{icone}</div>)))}
+    <div className=''>
+
+      <div className='flex flex-grid grid-cols- items-center justify-center'>
+
+        {iconsList.map(([key, icone]) => (
+        <div >
+          
+          <div className='text-2xl md:text-6xl lg:text-8xl  text-black'>{icone}</div>
+          <div className=''>{key}</div>
+
+        </div>
+          ))}
       </div>
+      
     </div>
 
 

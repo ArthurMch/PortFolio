@@ -20,7 +20,7 @@ import { TbSql } from "react-icons/tb";
 
 export default function Project() {
   return (
-    <><div id='projects' className=''><hr/></div>
+    <><div id='projects' className=''><hr className='bg-gray-800'/></div>
       <div  className='bg-indigo-800 lg:m-20 lg:pb-10 max-w-full rounded-xl'>
 
         <div className='grid justify-items-center m-10'>
