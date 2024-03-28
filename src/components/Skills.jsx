@@ -1,11 +1,9 @@
 import Skill_container from "./Skill_container";
-import Learn from '../assets/learn.jpeg'
+
 
   // I C O N E S 
   import { FaJava, FaReact, FaPhp, FaHtml5, FaPython, FaCss3 } from "react-icons/fa";
-  import { RiJavascriptFill } from "react-icons/ri";
-  import { SiLua } from "react-icons/si";
-  import { TbSql } from "react-icons/tb";
+
     // I C O N E S 
 
 
@@ -25,6 +23,7 @@ export default function Skills() {
 
   return (
     <div className="bg-white lg:m-20 max-w-full p-4 rounded-xl  mx-3 text-center ">
+      
     
       <div >
         <Skill_container
@@ -32,7 +31,7 @@ export default function Skills() {
           icones= {skillsData.icons}
         />
       </div>
-
+    <span id="hobbies"></span>
     </div>
     
 

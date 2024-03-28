@@ -7,7 +7,7 @@ const Hero = () => {
   const [showContent, setShowContent] = useState(false);
 
   const moreInfo = (
-    <div className="mt-4 text-gray-700 leading-relaxed">
+    <div className="mt-4 text-slate-300 leading-relaxed">
       Before launching my company, I attended a specialized mathematics and mechanics school with a focus on engineering and design. However, as time passed, I found myself growing increasingly disenchanted with the fields of mechanical engineering and design. Despite this, I discovered that I had a strong aptitude for problem-solving, which led me to explore other avenues where I could apply my skills. It is now clear to me that coding is an ideal fit for my abilities and interests.
 
 As I reflect on my career path, I realize that my strengths lie in analyzing complex situations, finding creative solutions, and developing efficient algorithms. 

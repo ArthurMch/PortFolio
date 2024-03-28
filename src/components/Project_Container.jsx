@@ -1,17 +1,28 @@
 import React from 'react'
+import { FaPlay } from "react-icons/fa6";
+import { BsGithub } from 'react-icons/bs';
 
 
 
-export default function Project_Container({title, icones, description, image, lien}) {
+export default function Project_Container({title, icones, description, image, lien, playable}) {
   return (
     
     <div className='max-w-md mx-auto text-center  size-full bg-white rounded-xl shadow-md 
                     overflow-hidden md:max-w-2xl hover:animate-pulse cursor-pointer'>
-    <a href={lien} target='_blank'>
+    <a href={lien} target='_blank' className='relative'>
+    {playable && (
+      <FaPlay className='text-2xl absolute m-2'/>
+     )} 
+    {!playable &&(
+      <BsGithub className='text-2l absolute m-2'/>
+    )} 
  <div className='md:flex items-center'>
    <div className='p-8'>
      <div className='uppercase tracking-wide text-sm ti-indigo-500 font-semibold'>
-     {title}
+
+     {title}<br/>
+     
+     
      </div>
      <div className='flex items-center  justify-center'>
      {icones}

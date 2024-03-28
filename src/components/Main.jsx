@@ -11,8 +11,11 @@ const Main = () => {
     <div className="bg-indigo-600">
         <Nav/>
         <Hero/>
+        <hr className="m-8"/>
         <Project/>
+        <hr className="m-8"/>
         <Skills/>
+        <hr className="m-8"/>
         <Hobbies/>
         <Footer/>
     </div>

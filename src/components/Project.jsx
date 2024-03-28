@@ -1,7 +1,7 @@
 import Project_Container from './Project_Container.jsx';
 
   // I M A G E S //
-import Enigma from '../assets/enigma.jpeg.png';
+
 import Platform from '../assets/platform.jpeg';
 import Pico from '../assets/pico.png';
 import Extension from '../assets/extension.jpeg';
@@ -20,7 +20,7 @@ import { TbSql } from "react-icons/tb";
 
 export default function Project() {
   return (
-    <><div id='projects' className=''><hr className='bg-gray-800'/></div>
+    <><div id='projects' className=''></div>
       <div  className='bg-indigo-800 lg:m-20 lg:pb-10 max-w-full rounded-xl'>
 
         <div className='grid justify-items-center m-10'>
@@ -38,6 +38,7 @@ export default function Project() {
               icones={[<FaHtml5/>,<FaCss3/>,<RiJavascriptFill/>]}
               description="Chrome browser extension focused on accessibility according to RGAA standards."
               image={Extension}
+              lien="https://github.com/ArthurMch/projet-collectif-extension-de-navigateur-neis-arthur-clara"
             />
             
             {/* rectangle 2 droite */}
@@ -46,6 +47,7 @@ export default function Project() {
               icones={[<FaHtml5/>,<FaCss3/>,<RiJavascriptFill/>]}
               description="Asynchronous connections to APIs for retrieving, processing, and presenting live information."
               image={Dataviz}
+              lien="https://github.com/ArthurMch/projet-collectif-dataviz-dataviz-leo-sabri-arthur"
             />
             
           </div>
@@ -61,6 +63,7 @@ export default function Project() {
               icones={[<FaJava/>,<FaReact/>,<RiJavascriptFill/>,<FaHtml5/>,<FaCss3/>]}
               description="Creating the backEnd with Java and Spring boot framework. Concerning FrontEnd we choose React."
               image={Platform}
+              lien="https://github.com/ArthurMch/projet-collectif-plateforme-de-vente-de-meubles-ventes-de-meubles"
             />
             
             {/* cube 4 droite */}
@@ -72,6 +75,7 @@ export default function Project() {
               description="Complete conception of the game with Pico-8 engine and LUA programming language."
               image={Pico}
               lien="https://www.lexaloffle.com/bbs/?tid=54873"
+              playable={true}
             />
             
           </div>
@@ -87,6 +91,7 @@ export default function Project() {
               icones={[<TbSql/>,<FaPhp/>,<FaHtml5/>,<FaCss3/>]}
               description="Designing a complete social network in PHP with secure authentication system and SQL database."
               image={Reseau}
+              lien="https://github.com/ArthurMch/projet-collectif-reseau-social-php-arthur-khalil-neis-leo"
             />
             
             {/* cube 6 droite */}
@@ -95,6 +100,7 @@ export default function Project() {
               icones={[<FaPython/>]}
               description="Designing the logic using Python with an object-oriented approach and the Tkinter library for the graphical interface."
               image={Demineur}
+              playable={true}
             />
              <div id="skills"></div>
 

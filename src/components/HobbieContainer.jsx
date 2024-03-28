@@ -3,7 +3,7 @@ import React from 'react'
 export default function HobbieContainer({title, description, image}) {
   return (
     <div className='max-w-md mx-auto text-center   rounded-xl shadow-md 
-    overflow-hidden md:max-w-2xl cursor-pointer m-8 px-4  border-solid border border-x-white bg-indigo-800'>
+    overflow-hidden md:max-w-2xl m-8 px-4  border-solid border border-x-white bg-indigo-800'>
 
 
  <div className='md:flex items-center p-8'>
