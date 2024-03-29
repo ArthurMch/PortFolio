@@ -23,7 +23,7 @@ const Nav = () => {
           <a href="#portfolio" className="text-white scroll-smooth font-mono text-3xl tracking-wider flex items-center"><RxRocket className="text-white"/>&nbsp;PORTFOLIO</a>
         </div>
         <div className="space-x-4">
-          <div className="ssm:hidden lg:block space-x-2">
+          <div className="hidden lg:block space-x-2">
             <a href="#skills" className="text-white scroll-smooth hover:bg-indigo-800 rounded-full px-5 py-2 text-xl">Skills</a>
             <a href="#projects" className="text-white scroll-smooth hover:bg-indigo-800 rounded-full px-5 py-2 text-xl">Projects</a>
             <a href="#hobbies" className="text-white scroll-smooth hover:bg-indigo-800 rounded-full px-5 py-2 text-xl">Hobbies</a>

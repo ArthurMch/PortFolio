@@ -21,21 +21,21 @@ As I reflect on my career path, I realize that my strengths lie in analyzing com
   
   return (
     
-    <section  id="portfolio" className='flex justify-arround lg:h-screen items-center p-10  lg:flex-row flex-col ssm:space-y-10 text-white'>
-        <div className='lg:w-1/3 ssm:w-fit'>
+    <section  id="portfolio" className='flex justify-arround lg:h-screen items-center p-10  lg:flex-row flex-col space-y-10 text-white'>
+        <div className='lg:w-1/3 '>
 
-          <h1 className='text-6xl pt-16'>Arthur Michaïlesco</h1><hr className='border-2 border-black'/>
+          <h1 className='text-6xl  pt-16'>Arthur Michaïlesco</h1><hr className='border-2 border-black'/>
           <p className='mt-10 text-slate-300 font-sans'>
           Currently enrolled in a FullStack program at Ada tech School (Bac +3 application developer). 
           Actively seeking an apprenticeship opportunity for one year starting June 2024. 
           
           </p>
         </div>
-        <div className='md:w-1/3 lg:w-1/3 lg:p-10'>
+        <div className='p-4 w-full md:w-1/3 lg:w-1/3 lg:p-10'>
            <img src={HeroPic} alt=''
            className='rounded-full border-8 border-white w-full'/>
         </div>
-        <div className='w-1/3 ssm:w-fit '>
+        <div className='w-fit '>
           <p className='text-4xl mb-4'>About Me</p>
           <p className='text-slate-300'>
           Formerly an entrepreneur in the cleaning industry,
@@ -44,7 +44,7 @@ As I reflect on my career path, I realize that my strengths lie in analyzing com
             
           </p>
 
-          <div className="container mx-auto">
+          <div className="container md:mx-0 lg:mx-0 mx-auto">
           {!showContent && (
             <button onClick={handleToggleClick} className='bg-white text-indigo-600 px-10 py-2 my-3 rounded-full hover:bg-indigo-800 hover:text-white'>
               Show more...
