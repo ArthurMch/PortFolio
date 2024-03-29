@@ -1,36 +1,34 @@
 import React from 'react'
 
-export default function Skill_container({description, icones}) {
+export default function Skill_container({ description, icones }) {
   const iconsList = Object.entries(icones);
- 
+
   return (
 
-    <div>
-        <div className='grid justify-items-center rounded-xl p-4 bg-black'>
-          <h1 className='text-3xl text-white'>Skills</h1>
+    <div className='pb-4'>
+
+      <div className='bg-white rounded-lg'>
+        <div className='p-4 text-indigo-400 text-center lg:w-1/2 mx-auto'>
+          {description}
         </div>
 
-    <div className='p-4 text-indigo-400'>
-        {description}
-    </div>
+        <div className=''>
 
-    <div className=''>
+          <div className='flex p-2 items-center justify-center'>
 
-      <div className='flex flex-grid grid-cols- items-center justify-center'>
+            {iconsList.map(([key, icone]) => (
+              <div >
 
-        {iconsList.map(([key, icone]) => (
-        <div >
-          
-          <div className='text-2xl md:text-6xl lg:text-8xl  text-black'>{icone}</div>
-          <div className=''>{key}</div>
+                <div className='text-2xl md:text-6xl lg:text-6xl  text-black'>{icone}</div>
+                <div className=''>{key}</div>
+
+              </div>
+            ))}
+          </div>
 
         </div>
-          ))}
+
       </div>
-      
-    </div>
-
-
     </div>
   )
 }

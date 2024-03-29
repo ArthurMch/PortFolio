@@ -23,8 +23,8 @@ export default function Project() {
     <><div id='projects' className=''></div>
       <div  className='bg-indigo-800 lg:m-20 lg:pb-10 max-w-full rounded-xl'>
 
-        <div className='grid justify-items-center m-10'>
-          <h1  className='text-3xl text-white mt-10'>Projects</h1>
+        <div className='grid justify-items-center'>
+          <h1  className='text-3xl font-mono uppercase text-white m-8 mt-10'>Projects</h1>
         </div>
 
         <div>
@@ -100,7 +100,7 @@ export default function Project() {
               icones={[<FaPython/>]}
               description="Designing the logic using Python with an object-oriented approach and the Tkinter library for the graphical interface."
               image={Demineur}
-              playable={true}
+              playable={false}
               lien="https://github.com/ArthurMch/minesweeper"
             />
              <div id="skills"></div>

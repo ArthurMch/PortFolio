@@ -21,23 +21,23 @@ As I reflect on my career path, I realize that my strengths lie in analyzing com
   
   return (
     
-    <section  id="portfolio" className='flex justify-arround lg:h-screen items-center p-10  lg:flex-row flex-col space-y-10 text-white'>
+    <section  id="start" className='flex justify-arround lg:h-screen items-center p-10  lg:flex-row flex-col space-y-10 text-white'>
         <div className='lg:w-1/3 '>
 
-          <h1 className='text-6xl  pt-16'>Arthur Michaïlesco</h1><hr className='border-2 border-black'/>
+          <h1 className='text-4xl md:text-6xl lg:text-6xl font-mono pt-16'>Arthur Michaïlesco</h1><hr className='border-2 border-black'/>
           <p className='mt-10 text-slate-300 font-sans'>
           Currently enrolled in a FullStack program at Ada tech School (Bac +3 application developer). 
           Actively seeking an apprenticeship opportunity for one year starting June 2024. 
           
           </p>
         </div>
-        <div className='p-4 w-full md:w-1/3 lg:w-1/3 lg:p-10'>
+        <div className='p-4 w-full max-w-80 md:w-1/3  lg:p-10'>
            <img src={HeroPic} alt=''
            className='rounded-full border-8 border-white w-full'/>
         </div>
         <div className='w-fit '>
-          <p className='text-4xl mb-4'>About Me</p>
-          <p className='text-slate-300'>
+          <p className='text-4xl font-mono mb-4'>About Me</p>
+          <p className='text-slate-300 '>
           Formerly an entrepreneur in the cleaning industry,
            I embarked on a year-long journey to Ireland to enhance my English proficiency. During this period, 
            I gained experience in the hospitality sector while self-teaching coding, igniting a newfound passion for software development.
