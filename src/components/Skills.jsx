@@ -22,9 +22,9 @@ export default function Skills() {
     };
 
   return (
-    <div className="bg-indigo-800 lg:m-20 max-w-full p-5 pb-8 lg:p-6 rounded-xl   text-center ">
+    <div className="bg-indigo-800 mx-auto lg:my-20 max-w-full p-5 pb-8 lg:p-6 rounded-xl lg:w-1/2 flex flex-col text-center justify-center">
 
-      <div className='grid justify-items-center '>
+      <div className='flex justify-center '>
           <h1 className='text-3xl font-mono uppercase text-white m-6 mb-10'>Skills</h1>
       </div>
       

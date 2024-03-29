@@ -15,7 +15,7 @@ const Main = () => {
         <Project/>
         <hr className="m-8"/>
         <Skills/>
-        <hr className="m-8 lg:p-6"/>
+        <hr className="m-8 "/>
         <Hobbies/>
         <Footer/>
     </div>

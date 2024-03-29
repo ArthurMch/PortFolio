@@ -6,7 +6,7 @@ import HobbieContainer from './HobbieContainer';
 
 export default function Hobbies() {
   return (
-    <div className='bg-indigo-800 lg:mx-auto md:mx-auto  mx-auto col-auto justify-center w-fit rounded-xl m-4 pb-4'>
+    <div className='bg-indigo-800 mx-auto col-auto justify-center w-fit rounded-xl m-4 pb-4 lg:my-20'>
 
         <div className=' items-center m-8 p-1'>
           <h1  className='text-3xl font-mono uppercase text-center rounded-lg text-white mt-10'>Hobbies</h1>
