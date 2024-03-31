@@ -59,7 +59,7 @@ export default function Project() {
 
             {/* cube 3 gauche */}
             <Project_Container 
-              title="Online furniture sales platform"
+              title="furniture sales platform"
               icones={[<FaJava/>,<FaReact/>,<RiJavascriptFill/>,<FaHtml5/>,<FaCss3/>]}
               description="Creating the backEnd with Java and Spring boot framework. Concerning FrontEnd we choose React."
               image={Platform}

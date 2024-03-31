@@ -24,7 +24,7 @@ export default function Project_Container({title, icones, description, image, li
      
      
      </div>
-     <div className='flex items-center  justify-center'>
+     <div className='flex items-center justify-center'>
      {icones}
      </div>
      <p className='mt-2 text-slate-500'>

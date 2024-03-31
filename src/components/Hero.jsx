@@ -7,7 +7,7 @@ const Hero = () => {
   const [showContent, setShowContent] = useState(false);
 
   const moreInfo = (
-    <div className="mt-4 text-slate-300 leading-relaxed">
+    <div className="mt-4 text-slate-300 leading-relaxed text-justify">
       Before launching my company, I attended a specialized mathematics and mechanics school with a focus on engineering and design. However, as time passed, I found myself growing increasingly disenchanted with the fields of mechanical engineering and design. Despite this, I discovered that I had a strong aptitude for problem-solving, which led me to explore other avenues where I could apply my skills. It is now clear to me that coding is an ideal fit for my abilities and interests.
 
 As I reflect on my career path, I realize that my strengths lie in analyzing complex situations, finding creative solutions, and developing efficient algorithms. 
@@ -25,7 +25,7 @@ As I reflect on my career path, I realize that my strengths lie in analyzing com
         <div className='lg:w-1/3 '>
 
           <h1 className='text-4xl md:text-6xl lg:text-6xl font-mono pt-16'>Arthur Michaïlesco</h1><hr className='border-2 border-black'/>
-          <p className='mt-10 text-slate-300 font-sans'>
+          <p className='mt-10 text-slate-300 text-justify font-sans'>
           Currently enrolled in a FullStack program at Ada tech School (Bac +3 application developer). 
           Actively seeking an apprenticeship opportunity for one year starting June 2024. 
           
@@ -37,7 +37,7 @@ As I reflect on my career path, I realize that my strengths lie in analyzing com
         </div>
         <div className='w-fit '>
           <p className='text-4xl font-mono mb-4'>About Me</p>
-          <p className='text-slate-300 '>
+          <p className='text-slate-300 text-justify'>
           Formerly an entrepreneur in the cleaning industry,
            I embarked on a year-long journey to Ireland to enhance my English proficiency. During this period, 
            I gained experience in the hospitality sector while self-teaching coding, igniting a newfound passion for software development.

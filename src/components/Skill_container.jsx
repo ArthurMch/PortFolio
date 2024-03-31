@@ -8,7 +8,7 @@ export default function Skill_container({ description, icones }) {
     <div className='pb-4'>
 
       <div className='bg-white rounded-lg'>
-        <div className='p-4 text-indigo-400 text-center '>
+        <div className='p-4 text-justify text-slate-500'>
           {description}
         </div>
 
