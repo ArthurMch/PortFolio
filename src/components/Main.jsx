@@ -4,6 +4,7 @@ import Project from "./Project";
 import Hobbies from "./Hobbies";
 import Footer from "./Footer";
 import Skills from './Skills';
+import Board from "./Board"
 
 
 const Main = () => {
@@ -17,6 +18,7 @@ const Main = () => {
         <Skills/>
         <hr className="m-8"/>
         <Hobbies/>
+        <Board/>
         <Footer/>
     </div>
   )

@@ -101,7 +101,8 @@ export default function Project() {
               description="Designing the logic using Python with an object-oriented approach and the Tkinter library for the graphical interface."
               image={Demineur}
               playable={false}
-              lien="https://github.com/ArthurMch/minesweeper"
+              lien="#demineur"
+              fenetre={true}
             />
              <div id="skills"></div>
 
