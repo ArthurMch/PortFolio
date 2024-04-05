@@ -4,7 +4,7 @@ import Project from "./Project";
 import Hobbies from "./Hobbies";
 import Footer from "./Footer";
 import Skills from './Skills';
-import Board from "./Board"
+
 
 
 const Main = () => {
@@ -14,11 +14,12 @@ const Main = () => {
         <Hero/>
         <hr className="m-8"/>
         <Project/>
+       
         <hr className="m-8"/>
         <Skills/>
         <hr className="m-8"/>
         <Hobbies/>
-        <Board/>
+        
         <Footer/>
     </div>
   )

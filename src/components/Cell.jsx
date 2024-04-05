@@ -41,7 +41,7 @@ export default function Cell({ details, updateFlag, revealcell }) {
         : "bg-blue-500" //  cell decouverte avec un numero
       : details.revealed && details.value === 0
       ? "bg-white" // cell decouverte et vide avec 0 mine autour
-      : "bg-black" // cell pas decouverte
+      : "bg-slate-600" // cell pas decouverte
   }`;
 
   // Displaying contents of the cell with proper styling
