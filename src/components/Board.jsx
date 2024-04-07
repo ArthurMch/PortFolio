@@ -15,14 +15,9 @@ function Board({isVisible}) {
   const [mineLocation,setmineLocation]=useState([]);
   const [messageLorW, setmessageLorW]=useState("");
   const [nowVisible, setNowVisible] = useState(false);
+  
   const [visible, setVisible] = useState(isVisible);
-  
 
-  
-
-  const handleToggleClick = () => {
-    setLooseButton((prevState) => !prevState);
-  };
 
 
 
@@ -76,8 +71,8 @@ function Board({isVisible}) {
   }
 
   const clickX = () => {
+    freshBoard();
     setVisible(false);
-    LooseButton.style = "invisible"
   };
   
   return (

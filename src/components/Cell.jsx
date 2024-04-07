@@ -6,14 +6,7 @@ import { BiErrorCircle } from 'react-icons/bi';
 import { GiSmartphone } from 'react-icons/gi';
 
 export default function Cell({ details, updateFlag, revealcell }) {
-  // Icons for visual feedback instead of sound effects
-  const iconComponents = {
-    click: <GiSmartphone />,
-    flag: <FiFlag />,
-    boom: <BiErrorCircle />,
-    error: <HiOutlineExclamationCircle />,
-    check: <IoMdCheckmarkCircleOutline />,
-  };
+
 
   // Handling clicks and updating the cell accordingly
   const handleClick = () => {
@@ -41,7 +34,7 @@ export default function Cell({ details, updateFlag, revealcell }) {
         : "bg-blue-500" //  cell decouverte avec un numero
       : details.revealed && details.value === 0
       ? "bg-white" // cell decouverte et vide avec 0 mine autour
-      : "bg-slate-600" // cell pas decouverte
+      : "bg-slate-400" // cell pas decouverte
   }`;
 
   // Displaying contents of the cell with proper styling
