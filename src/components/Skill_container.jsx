@@ -19,7 +19,7 @@ export default function Skill_container({ description, icones }) {
             {iconsList.map(([key, icone]) => (
               <div >
 
-                <div className='text-2xl md:text-6xl lg:text-6xl  text-black'>{icone}</div>
+                <div className='text-2xl md:text-6xl lg:text-5xl  text-black'>{icone}</div>
                 <div className=''>{key}</div>
 
               </div>

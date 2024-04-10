@@ -31,14 +31,16 @@ export default function Project() {
 
           {/* rangé 1 */}
           <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 p-5'>
-
+      
             {/* rectangle 1 gauche */}
             <Project_Container 
-              title="Browser extension"
-              icones={[<FaHtml5/>,<FaCss3/>,<RiJavascriptFill/>]}
-              description="Chrome browser extension focused on accessibility according to RGAA standards."
-              image={Extension}
-              lien="https://github.com/ArthurMch/projet-collectif-extension-de-navigateur-neis-arthur-clara"
+              title="Minesweeper"
+              icones={[<FaPython/>]}
+              description="Originally coded in Python with an object-oriented approach, and later adapted to React to make it playable from my portfolio."
+              image={Demineur}
+              playable={false}
+              lien="https://github.com/ArthurMch/minesweeper"
+              fenetre={true}
             />
             
             {/* rectangle 2 droite */}
@@ -96,13 +98,11 @@ export default function Project() {
             
             {/* cube 6 droite */}
             <Project_Container 
-              title="Minesweeper"
-              icones={[<FaPython/>]}
-              description="Designing the logic using Python with an object-oriented approach and the Tkinter library for the graphical interface."
-              image={Demineur}
-              playable={false}
-              lien="#demineur"
-              fenetre={true}
+              title="Browser extension"
+              icones={[<FaHtml5/>,<FaCss3/>,<RiJavascriptFill/>]}
+              description="Chrome browser extension focused on accessibility according to RGAA standards."
+              image={Extension}
+              lien="https://github.com/ArthurMch/projet-collectif-extension-de-navigateur-neis-arthur-clara"
             />
              <div id="skills"></div>
 

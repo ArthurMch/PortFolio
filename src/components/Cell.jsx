@@ -25,7 +25,7 @@ export default function Cell({ details, updateFlag, revealcell }) {
   };
 
   // Generating class names based on properties of details object
-  const cellClasses = `w-10 h-10 border border-indigo-800  rounded-md font-bold text-black flex items-center 
+  const cellClasses = `w-8 h-8 lg:w-10 lg:h-10 border border-indigo-800  rounded-md font-bold text-black flex items-center 
   justify-center text-xs uppercase select-none pointer-events-auto cursor-pointer relative overflow-hidden 
   transition duration-300 transform ${
     details.revealed && details.value !== 0
