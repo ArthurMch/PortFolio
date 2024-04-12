@@ -18,11 +18,11 @@ export default function Project_Container({title, icones, description, image, li
     
     {playable && (
       <a href={lien} target='_blank' className='relative'>
-      <FaPlay className='text-4xl absolute m-2'/></a>
+      <FaPlay className='text-3xl absolute m-2'/></a>
      )} 
     {!playable &&(
-      <a href={lien} target='_blank' className='relative bg-pink-600'>
-      <BsGithub className='bg-indigo-200 rounded-full text-4xl absolute m-2'/></a>
+      <a href={lien} target='_blank' className='relative'>
+      <BsGithub className=' text-3xl absolute m-2'/></a>
     )} 
     
     
