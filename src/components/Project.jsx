@@ -45,11 +45,11 @@ export default function Project() {
             
             {/* rectangle 2 droite */}
             <Project_Container 
-              title="Meteo data visualization"
+              title="Browser extension"
               icones={[<FaHtml5/>,<FaCss3/>,<RiJavascriptFill/>]}
-              description="Asynchronous connections to APIs for retrieving, processing, and presenting live information."
-              image={Dataviz}
-              lien="https://github.com/ArthurMch/projet-collectif-dataviz-dataviz-leo-sabri-arthur"
+              description="Chrome browser extension focused on accessibility according to RGAA standards."
+              image={Extension}
+              lien="https://github.com/ArthurMch/projet-collectif-extension-de-navigateur-neis-arthur-clara"
             />
             
           </div>
@@ -98,11 +98,11 @@ export default function Project() {
             
             {/* cube 6 droite */}
             <Project_Container 
-              title="Browser extension"
+              title="Meteo data visualization"
               icones={[<FaHtml5/>,<FaCss3/>,<RiJavascriptFill/>]}
-              description="Chrome browser extension focused on accessibility according to RGAA standards."
-              image={Extension}
-              lien="https://github.com/ArthurMch/projet-collectif-extension-de-navigateur-neis-arthur-clara"
+              description="Asynchronous connections to APIs for retrieving, processing, and presenting live information."
+              image={Dataviz}
+              lien="https://github.com/ArthurMch/projet-collectif-dataviz-dataviz-leo-sabri-arthur"
             />
              <div id="skills"></div>
 

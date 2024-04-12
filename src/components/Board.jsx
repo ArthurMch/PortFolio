@@ -5,18 +5,19 @@ import CreateBoard from '../utils/CreateBoard';
 import Cell from "./Cell";
 import { revealed } from "../utils/Reveal";
 import LooseButton from "./LooseButton";
+import isVisible from "./Project_Container";
 
 
 
 
-function Board({isVisible}) {
+function Board(props) {
   const [grid,setGrid]=useState([]);
   const [nonMinecount,setNonMinecount]=useState(0);
   const [mineLocation,setmineLocation]=useState([]);
   const [messageLorW, setmessageLorW]=useState("");
   const [nowVisible, setNowVisible] = useState(false);
   
-  const [visible, setVisible] = useState(isVisible);
+  
 
 
 
@@ -72,15 +73,15 @@ function Board({isVisible}) {
 
   const clickX = () => {
     freshBoard();
-    setVisible(false);
+    props.onChangeChild(!props.isVisible)
   };
   
   return (
-    <div id="full_demineur" className={(visible ? "visible" : "invisible") + " fixed w-screen h-screen top-0 left-0 flex flex-col items-center justify-center z-10 "}>
+    <div id="full_demineur" className={(props.isVisible ? "visible" : "invisible") + " fixed w-screen h-screen top-0 left-0 flex flex-col items-center justify-center z-10 "}>
       
-      <div className="fixed w-screen h-screen  opacity-85 bg-indigo-400"></div>
+      <div onClick={clickX} className="fixed w-screen h-screen  opacity-85 bg-indigo-400"></div>
     <Fragment>
-    <button onClick={clickX} className="fixed right-0 top-0 border-2 border-black bg-white m-6 px-4 z-40 py-2 rounded-lg ">X</button>
+    <button onClick={(clickX)} className="fixed right-0 top-0 border-2 border-black bg-white m-6 px-4 z-40 py-2 rounded-lg ">X</button>
         <div className="bg-white p-5 rounded-lg border-2 border-black z-20">
         <div className="text-white rounded-lg mb-4 p-2 bg-indigo-400 text-center  ">{nonMinecount} remaining cells are free of mines.</div>
 
