@@ -33,8 +33,8 @@ export default function Cell({ details, updateFlag, revealcell }) {
         ? "bg-red-600"  // cell avec mine 
         : "bg-blue-500" //  cell decouverte avec un numero
       : details.revealed && details.value === 0
-      ? "bg-white" // cell decouverte et vide avec 0 mine autour
-      : "bg-slate-400" // cell pas decouverte
+      ? " bg-sate-200 " // cell decouverte et vide avec 0 mine autour
+      : "bg-slate-400 border-2" // cell pas decouverte
   }`;
 
   // Displaying contents of the cell with proper styling
