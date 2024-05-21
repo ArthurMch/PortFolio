@@ -1,21 +1,27 @@
 import Project_Container from './Project_Container.jsx';
 
   // I M A G E S //
-
 import Platform from '../assets/platform.jpeg';
 import Pico from '../assets/pico.png';
 import Extension from '../assets/extension.jpeg';
 import Dataviz from '../assets/dataviz.jpeg';
 import Reseau from '../assets/reseau.jpeg';
 import Demineur from '../assets/demineur.jpeg';
+import RestApi from '../assets/apiRest.jpeg';
+import Soon from '../assets/soon.jpeg';
   // I M A G E S //
 
+// fetch composent 
+const ico = "FaJava";
   // I C O N E S 
-import { FaJava, FaReact, FaPhp, FaHtml5, FaPython, FaCss3 } from "react-icons/fa";
+import { FaJava, FaReact, FaPhp, FaHtml5, FaPython, FaCss3, FaNode } from "react-icons/fa";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiLua } from "react-icons/si";
+import { SiExpress, SiLua, SiMongodb, SiMongoose } from "react-icons/si";
 import { TbSql } from "react-icons/tb";
+import { HiOutlineEmojiHappy } from 'react-icons/hi';
   // I C O N E S 
+
+// const dotenv = require('dotenv');
 
 
 export default function Project() {
@@ -104,11 +110,32 @@ export default function Project() {
               image={Dataviz}
               lien="https://github.com/ArthurMch/projet-collectif-dataviz-dataviz-leo-sabri-arthur"
             />
-             <div id="skills"></div>
+          </div>
 
+          <hr/>
+          {/* rangé 4 */}
+          <div className='grid grid-cols-1 lg:grid-cols-2 gap-4 p-5' >
+
+            {/* cube 7 gauche */}
+            <Project_Container
+              title="API REST"
+              icones={[<FaNode/>,<SiMongodb/>,<SiMongoose/>,<SiExpress/>]}
+              description="Designed and developed a robust REST API using Mongoose, Express, data models, schema, CRUD operations."
+              image={RestApi}
+              lien="https://github.com/ArthurMch/BackEnd-PortFolio"
+            />
+            
+            {/* cube 8 droite */}
+            <Project_Container 
+              title="Upcoming project... !"
+              icones={[<HiOutlineEmojiHappy/>,<HiOutlineEmojiHappy/>,<HiOutlineEmojiHappy/>]}
+              description="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;"
+              image={Soon}
+              lien="https://github.com/ArthurMch"
+            />
           </div>
          
-
+<div id="skills"></div>
         </div>
       </div>
     </>

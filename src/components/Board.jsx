@@ -22,7 +22,7 @@ function Board(props) {
 
 
 
-  const freshBoard = () => {
+  function freshBoard() {
           const newBoard=CreateBoard(10,10,10);
           setNonMinecount(10*10-10);
           setmineLocation(newBoard.mineLocation);
@@ -32,13 +32,13 @@ function Board(props) {
 
     
   
-  useEffect(()=>{
+  useEffect(() => {
       freshBoard();
   },[]);
   
   const updateFlag=(e,x,y)=>{
       e.preventDefault();
-      // deep copy of the object
+      // deep copy of the object // 
       let newGrid=JSON.parse(JSON.stringify(grid));
       newGrid[x][y].flagged=true;
       setGrid(newGrid);
@@ -82,7 +82,7 @@ function Board(props) {
       <div onClick={clickX} className="fixed w-screen h-screen  opacity-85 bg-indigo-400"></div>
     <Fragment>
     <button onClick={(clickX)} className="fixed right-0 top-0 border-2 border-black bg-white m-6 px-4 z-40 py-2 rounded-lg ">X</button>
-        <div className="bg-white p-5 rounded-lg border-4 border-black z-20">
+        <div className="bg-white p-5 rounded-lg border-8 border-black z-20">
         <div className="text-white rounded-lg mb-4 p-2 bg-indigo-400 text-center  ">{nonMinecount} remaining cells are free of mines.</div>
 
         <div  className="flex flex-col justify-center">
